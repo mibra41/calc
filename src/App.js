@@ -31,7 +31,7 @@ class App extends Component{
       else {
         previous.push(this.state.current + " " + symbol);
       }
-      this.setState({previous, nextIsReset: true});
+      this.setState({current:"0", previous, nextIsReset: true});
     } else {
       if ((this.state.current === "0" && symbol !== ".") || this.state.nextIsReset) {
         this.setState({current: symbol, nextIsReset: false});  
